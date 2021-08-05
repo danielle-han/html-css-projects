@@ -1,7 +1,8 @@
 html {
 	scroll-behavior: smooth;
 	background-color: #f8f8f8;
-	font-size: 62.5%
+	font-size: 62.5%;
+	font-family:'Times New Roman', Times, serif;
 }
 
 body {
@@ -163,7 +164,6 @@ header nav {
 	border-color:black;
 	border-radius: .5rem;
 	border-width: 2px;
-	font-family:
 }
 #submit {
 	background-color: #B0B0B0;
