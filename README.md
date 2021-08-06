@@ -2,9 +2,9 @@
 ## Introduction
 This repository contains HTML and CSS Projects for the Tech Academy Bootcamp.
 ## Projects
-[Space Station Project](https://github.com/danielle-han/html-css-projects/tree/main/project)
-[One-Page Website](https://github.com/danielle-han/html-css-projects/tree/main/One-Page%20Website)
-[BootStrap Project - Cinemas](https://github.com/danielle-han/html-css-projects/tree/main/bootstrap4_project)
+* [Space Station Project](https://github.com/danielle-han/html-css-projects/tree/main/project)
+* [One-Page Website](https://github.com/danielle-han/html-css-projects/tree/main/One-Page%20Website)
+* [BootStrap Project - Cinemas](https://github.com/danielle-han/html-css-projects/tree/main/bootstrap4_project)
 ### Space Station Project
 This project is an example website for a space travel company. This website was created using HTML and CSS. It is a one page website with a navigation bar, gallery of images, and a contact form.
 ### One-Page Website
