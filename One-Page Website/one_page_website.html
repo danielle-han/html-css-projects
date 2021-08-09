@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Tour Banff</title>
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="js/one_page_website.js" defer></script>
 	</head>
 	<body>
 		
@@ -17,7 +18,7 @@
 			<nav>
 				<a href="#home">Home</a>
 				<a href="#perks">Perks</a>
-				<a href="#video">Video</a>
+				<a href="#gallery">Gallery</a>
 				<a href="#contact">Contact</a>
 			</nav>
 			
@@ -65,18 +66,93 @@
 		</section>
 		<!-- perks end -->
 		
-		<!-- video -->
-		<section id="video">
+		<!-- gallery -->
+		<section id="gallery">
 		
-			<h3>Video</h3>
+			<h3>Gallery</h3>
 			<p>Take a look at what you may experience!</p>
 			
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/AJDalGwIeC8" 
 			title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 			</iframe>
+
+			<!-- Lightbox-->
+			<!-- images for lightbox -->
+			<div class='row'>
+
+				<div class='column'>
+					<img src='images/peyto-lake.png' alt='peyto lake banff' onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+
+				<div class='column'>
+					<img src='images/johnston-canyon.png' alt='johnston canyon banff' onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+
+				<div class='column'>
+					<img src='images/columbia-icefield-tour.png' alt='columbia icefield tour banff' onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+
+				<div class='column'>
+					<img src='images/skywalk.png' alt='skywalk banff' onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+
+			</div>
+
+			<!-- Modal/Lightbox -->
+			<div id='myModal' class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class='modal-content'>
+
+					<div class='mySlides'>
+						<div class='numbertext'> 1 / 4</div>
+						<img src='images/peyto-lake.png' alt='peyto lake banff'>
+					</div>
+
+					<div class='mySlides'>
+						<div class='numbertext' style='color:white;'> 2 / 4</div>
+						<img src='images/johnston-canyon.png' alt='johnston canyon banff'>
+					</div>
+
+					<div class='mySlides'>
+						<div class='numbertext'> 3 / 4</div>
+						<img src='images/columbia-icefield-tour.png' alt='columbia icefield tour at banff'>
+					</div>
+
+					<div class='mySlides'>
+						<div class='numbertext'> 4 / 4</div>
+						<img src='images/skywalk.png' alt='skywalk banff'>
+					</div>
+				</div>
+
+				<!-- next/previous controls -->
+				<a class='prev' onclick="plusSlides(-1)">&#10094;</a>
+				<a class='next' onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- caption text -->
+				<div class='caption-container'>
+					<p id='caption'></p>
+				</div>
+
+				<!-- thumbnail image controls -->
+				<div class='column'>
+					<img class='demo' src='images/peyto-lake.png' onclick='currentSlide(1)' alt='Peyto Lake'>
+				</div>
+
+				<div class='column'>
+					<img class='demo' src='images/johnston-canyon.png' onclick='currentSlide(2)' alt='Johnston Canyon'>
+				</div>
+
+				<div class='column'>
+					<img class='demo' src='images/columbia-icefield-tour.png' onclick='currentSlide(3)' alt='Columbia Icefield Tour - Athabasca Glacier'>
+				</div>
+
+				<div class='column'>
+					<img class='demo' src='images/skywalk.png' onclick='currentSlide(4)' alt='Columbia Icefield Tour - Skywalk'>
+				</div>
+			</div>
 			
 		</section>
-		<!-- video end -->
+		<!-- gallery end -->
 		
 		<!-- contact -->
 		<section id="contact">
